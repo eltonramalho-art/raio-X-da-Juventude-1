@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raio-X da Juventude | Diagnóstico Socioeducacional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header class="hero">
+        <div class="container">
+            <div class="badge"><i class="fa-solid fa-chart-line"></i> Diagnóstico Socioeducacional</div>
+            <h1>Raio-X da Juventude 🎯</h1>
+            <p>Análise de Condições de Vida e Métricas para Atuação Social e Educacional</p>
+            <div class="hero-actions">
+                <a href="#diagnostico" class="btn btn-primary"><i class="fa-solid fa-chart-pie"></i> Ver Diagnóstico</a>
+                <a href="#propostas" class="btn btn-outline"><i class="fa-solid fa-lightbulb"></i> Pilares de Impacto</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Cards de Indicadores Rápidos -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <i class="fa-solid fa-users stat-icon"></i>
+                <div>
+                    <h3>250</h3>
+                    <p>Jovens Diagnosticados</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-wifi stat-icon"></i>
+                <div>
+                    <h3>10%</h3>
+                    <p>Sem Acesso à Internet</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-graduation-cap stat-icon"></i>
+                <div>
+                    <h3>82%</h3>
+                    <p>Frequência Escolar Média</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Objetivo e Tecnologias -->
+        <section class="card">
+            <h2><i class="fa-solid fa-bullseye"></i> Objetivo do Projeto</h2>
+            <p>Diagnosticar as condições socioeconômicas e educacionais de jovens por meio do tratamento de dados em Python, gerando insights acionáveis para embasar políticas públicas e iniciativas educacionais.</p>
+            
+            <div class="tech-stack">
+                <span class="tag"><i class="fa-brands fa-python"></i> Python (Google Colab)</span>
+                <span class="tag"><i class="fa-solid fa-table"></i> Pandas & NumPy</span>
+                <span class="tag"><i class="fa-chart-column"></i> Seaborn & Matplotlib</span>
+                <span class="tag"><i class="fa-brands fa-github"></i> GitHub Pages</span>
+            </div>
+        </section>
+
+        <!-- Seção: Diagnóstico Visuais (Gráficos) -->
+        <section id="diagnostico" class="card">
+            <h2><i class="fa-solid fa-chart-simple"></i> Diagnóstico e Métricas</h2>
+            <p class="section-desc">Resultados obtidos após a limpeza e exploração da base de dados:</p>
+
+            <!-- Gráfico 1: Acesso à Internet x Renda -->
+            <div class="chart-box">
+                <h3>Disparidade de Acesso à Internet por Faixa de Renda</h3>
+                <div class="bar-chart">
+                    <div class="bar-group">
+                        <span class="bar-label">Até 1 SM</span>
+                        <div class="bar-track">
+                            <div class="bar-fill blue" style="width: 45%;">45% Banda Larga</div>
+                            <div class="bar-fill orange" style="width: 40%;">40% Dados Móveis</div>
+                            <div class="bar-fill red" style="width: 15%;">15% Sem Acesso</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <span class="bar-label">1 a 3 SM</span>
+                        <div class="bar-track">
+                            <div class="bar-fill blue" style="width: 70%;">70% Banda Larga</div>
+                            <div class="bar-fill orange" style="width: 25%;">25% Dados Móveis</div>
+                            <div class="bar-fill red" style="width: 5%;">5%</div>
+                        </div>
+                    </div>
+
+                    <div class="bar-group">
+                        <span class="bar-label">Acima de 3 SM</span>
+                        <div class="bar-track">
+                            <div class="bar-fill blue" style="width: 90%;">90% Banda Larga</div>
+                            <div class="bar-fill orange" style="width: 10%;">10%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-legend">
+                    <span class="dot blue"></span> Banda Larga 
+                    <span class="dot orange"></span> Apenas 3G/4G 
+                    <span class="dot red"></span> Sem Acesso
+                </div>
+            </div>
+
+            <!-- Gráfico 2: Frequência vs Horas de Estudo -->
+            <div class="chart-box">
+                <h3>Média de Frequência Escolar (%) por Horas de Estudo Diárias</h3>
+                <div class="simple-bar-chart">
+                    <div class="col"><div class="fill" style="height: 65%;">65%</div><span>1h/dia</span></div>
+                    <div class="col"><div class="fill" style="height: 78%;">78%</div><span>2h/dia</span></div>
+                    <div class="col"><div class="fill" style="height: 85%;">85%</div><span>3h/dia</span></div>
+                    <div class="col"><div class="fill" style="height: 92%;">92%</div><span>4h/dia</span></div>
+                    <div class="col"><div class="fill" style="height: 95%;">95%</div><span>5h/dia</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Pilares Estratégicos -->
+        <section id="propostas">
+            <h2 class="section-title"><i class="fa-solid fa-rocket"></i> Pilares Estratégicos de Intervenção</h2>
+            
+            <div class="grid-3">
+                <div class="card pilar-card">
+                    <div class="icon-wrapper blue"><i class="fa-solid fa-wifi"></i></div>
+                    <h3>1. Inclusão Digital</h3>
+                    <p>Polos comunitários de estudos com internet gratuita de alta velocidade e equipamentos para jovens de baixa renda.</p>
+                </div>
+
+                <div class="card pilar-card">
+                    <div class="icon-wrapper green"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>2. Apoio Socioemocional</h3>
+                    <p>Programas de mentoria e acompanhamento psicossocial nas escolas públicas para combate à evasão.</p>
+                </div>
+
+                <div class="card pilar-card">
+                    <div class="icon-wrapper purple"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>3. Capacitação Técnica</h3>
+                    <p>Oferta de cursos de programação, análise de dados e habilidades digitais focados no mercado de trabalho.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Projeto <strong>Raio-X da Juventude</strong> — Ciência de Dados Aplicada à Transformação Social</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-color: #f1f5f9;
+    --card-bg: #ffffff;
+    --text-color: #0f172a;
+    --text-muted: #64748b;
+    --border-radius: 16px;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 70px 0 50px 0;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(37, 99, 235, 0.2);
+    color: #60a5fa;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid #475569;
+    color: white;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: var(--shadow);
+    border: 1px solid #e2e8f0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: -25px;
+}
+
+.stat-card {
+    background: var(--card-bg);
+    padding: 15px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #e2e8f0;
+}
+
+.stat-icon {
+    font-size: 1.5rem;
+    color: var(--primary);
+    background: #eff6ff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.tag {
+    background: #eff6ff;
+    color: var(--primary);
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Gráficos em CSS */
+.chart-box {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+.bar-group {
+    margin: 15px 0;
+}
+
+.bar-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.bar-track {
+    display: flex;
+    height: 25px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #e2e8f0;
+}
+
+.bar-fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 700;
+}
+
+.blue { background-color: #2563eb; }
+.orange { background-color: #f97316; }
+.red { background-color: #ef4444; }
+
+.chart-legend {
+    display: flex;
+    gap: 15px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.simple-bar-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+    padding-top: 20px;
+}
+
+.simple-bar-chart .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.simple-bar-chart .fill {
+    width: 100%;
+    background: var(--primary);
+    border-radius: 6px 6px 0 0;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+}
+
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.green { background: #f0fdf4; color: #16a34a; }
+.purple { background: #faf5ff; color: #9333ea; }
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
